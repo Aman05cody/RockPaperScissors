@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  color: white;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.game-container {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  width: 100%;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 0.75rem 0;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(45deg, #fff, #ccc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.move-icon {
+  height: 50px;
+  transition: transform 0.2s ease;
+}
+
+.move-button {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 3px solid rgba(255, 255, 255, 0.8);
+  width: 110px;
+  height: 110px;
+  border-radius: 55px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.move-button:hover {
+  transform: translateY(-5px);
+  border-color: #fff;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.move-button:hover .move-icon {
+  transform: scale(1.1);
+}
+
+.result {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  text-align: center;
+  padding: 0.75rem;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  min-width: 180px;
+}
+
+.js-moves {
+  margin: 1.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  font-size: 1.1rem;
+}
+
+.score {
+  margin-top: 1.5rem;
+  font-size: 1.25rem;
+  text-align: center;
+  padding: 0.75rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  backdrop-filter: blur(5px);
+}
+
+.reset-score-button {
+  background: linear-gradient(45deg, #ff6b6b, #ff8e8e);
+  border: none;
+  font-size: 1rem;
+  padding: 8px 20px;
+  cursor: pointer;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+}
+
+.reset-score-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
+  background: linear-gradient(45deg, #ff5252, #ff7676);
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 0.75rem;
+  }
+  
+  .title {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .move-button {
+    width: 90px;
+    height: 90px;
+    margin: 0 6px;
+  }
+  
+  .move-icon {
+    height: 35px;
+  }
+  
+  .result {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+  }
+  
+  .score {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+  }
+
+  .js-moves {
+    font-size: 1rem;
+    margin: 1rem 0;
+  }
+
+  .reset-score-button {
+    font-size: 0.9rem;
+    padding: 6px 16px;
+    margin-top: 1rem;
+  }
+}

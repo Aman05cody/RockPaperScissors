@@ -74,6 +74,16 @@ function updateScoreElement() {
     .innerHTML = `Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`;
 }
 
+function resetScore() {
+  score.wins = 0;
+  score.losses = 0;
+  score.ties = 0;
+  localStorage.removeItem('score');
+  updateScoreElement();
+  document.querySelector('.js-result').innerHTML = '';
+  document.querySelector('.js-moves').innerHTML = '';
+}
+
 function pickComputerMove() {
   const randomNumber = Math.random();
 

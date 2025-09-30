@@ -104,11 +104,12 @@ Contributions make the open source community amazing! Any contributions you make
 
 ## 🔑 License
 
-Distributed under the MIT License. See `LICENSE` for more information.
+Distributed under the MIT License.
 
 ## 👤 Author
 
-**Aman05cody**
+**Aman**
+- GitHub: [@Aman05cody](https://github.com/Aman05cody)
 
 ## ⭐ Show your support
 

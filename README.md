@@ -13,7 +13,7 @@
 
 #### A sleek and modern take on the classic game, built with pure HTML, CSS, and JavaScript.
 
-[View Demo](#installation) · [Report Bug](https://github.com/Aman05cody/RockPaperScissors/issues) · [Request Feature](https://github.com/Aman05cody/RockPaperScissors/issues)
+[View Demo](https://rock-paper-scissors-c.netlify.app/) · [Report Bug](https://github.com/Aman05cody/RockPaperScissors/issues) · [Request Feature](https://github.com/Aman05cody/RockPaperScissors/issues)
 
 </div>
 
@@ -104,11 +104,12 @@ Contributions make the open source community amazing! Any contributions you make
 
 ## 🔑 License
 
-Distributed under the MIT License. See `LICENSE` for more information.
+Distributed under the MIT License.
 
 ## 👤 Author
 
-**Aman05cody**
+**Aman**
+- GitHub: [@Aman05cody](https://github.com/Aman05cody)
 
 ## ⭐ Show your support
 

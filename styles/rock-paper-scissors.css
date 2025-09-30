@@ -130,6 +130,41 @@ body {
   background: linear-gradient(45deg, #ff5252, #ff7676);
 }
 
+/* Toast Notification Styles */
+.toast {
+  position: fixed;
+  top: 0px;
+  left: 50%;
+  transform: translate(-50%, -100px);
+  padding: 12px 24px;
+  border-radius: 25px;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 500;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+}
+
+.toast.show {
+  transform: translate(-50%, 0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.toast.win {
+  background: rgba(46, 204, 113, 0.7); /* Green for win */
+}
+.toast.lose {
+  background: rgba(231, 76, 60, 0.7); /* Red for lose */
+}
+.toast.tie {
+  background: rgba(243, 156, 18, 0.7); /* Orange for tie */
+}
+
 @media (max-width: 600px) {
   body {
     padding: 0.75rem;

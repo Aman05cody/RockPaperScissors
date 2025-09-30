@@ -16,6 +16,8 @@ if (!score) {
 }
 */
 
+let toastTimeout;
+
 function playGame(playerMove) {
   const computerMove = pickComputerMove();
 
@@ -51,10 +53,13 @@ function playGame(playerMove) {
 
   if (result === 'You win.') {
     score.wins += 1;
+    showToast('Congratulations, you won! 🎉', 'win');
   } else if (result === 'You lose.') {
     score.losses += 1;
+    showToast('Better luck next time 😔', 'lose');
   } else if (result === 'Tie.') {
     score.ties += 1;
+    showToast("Oh, it's a tie 😐", 'tie');
   }
 
   localStorage.setItem('score', JSON.stringify(score));
@@ -98,4 +103,18 @@ function pickComputerMove() {
   }
 
   return computerMove;
+}
+
+function showToast(message, type) {
+  const toast = document.getElementById('toast-notification');
+  toast.textContent = message;
+  toast.className = 'toast'; // Reset classes
+  toast.classList.add('show', type);
+
+  // Clear previous timeout if it exists
+  clearTimeout(toastTimeout);
+
+  toastTimeout = setTimeout(() => {
+    toast.classList.remove('show');
+  }, 3000); // Hide after 3 seconds
 }

@@ -65,7 +65,7 @@
 2. **Open the Game**
    ```bash
    cd RockPaperScissors
-   # Open rock-paper-scissors.html in your browser
+   # Open index.html in your browser
    ```
 
 3. **Start Playing!**

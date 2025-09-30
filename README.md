@@ -13,7 +13,7 @@
 
 #### A sleek and modern take on the classic game, built with pure HTML, CSS, and JavaScript.
 
-[View Demo](#installation) · [Report Bug](https://github.com/Aman05cody/RockPaperScissors/issues) · [Request Feature](https://github.com/Aman05cody/RockPaperScissors/issues)
+[View Demo]([#installation](https://rock-paper-scissors-c.netlify.app/)) · [Report Bug](https://github.com/Aman05cody/RockPaperScissors/issues) · [Request Feature](https://github.com/Aman05cody/RockPaperScissors/issues)
 
 </div>
 
